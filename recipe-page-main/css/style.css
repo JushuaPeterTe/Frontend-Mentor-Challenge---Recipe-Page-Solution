@@ -14,6 +14,10 @@
     --Dark-Charcoal: hsl(24, 5%, 18%);
 }
 
+html {
+    padding: 30px;
+}
+
 body {
     background-color: var(--Eggshell);
     font-family: 'Outfit', sans-serif;
@@ -146,6 +150,9 @@ ol li {
 
 
 @media (max-width: 768px) {
+    html {
+        padding: 5px;
+    }
     .main-content {
         margin: 10px;
         padding: 11px;
@@ -163,6 +170,9 @@ ol li {
 }
 
 @media (max-width: 480px) {
+    html {
+        padding: 0px;
+    }
     .main-content {
         margin: 5px;
         padding: 4px;
