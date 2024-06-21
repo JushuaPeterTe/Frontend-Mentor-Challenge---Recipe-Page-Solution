@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Young+Serif:wght@400&display=swap');
+
+:root {
+    /* Primary */
+    --Nutmeg: hsl(14, 45%, 36%);
+    --Dark-Raspberry: hsl(332, 51%, 32%);
+
+    /* Neutral */
+    --White: hsl(0, 0%, 100%);
+    --Rose-White: hsl(330, 100%, 98%);
+    --Eggshell: hsl(30, 54%, 90%);
+    --Light-Grey: hsl(30, 18%, 87%);
+    --Wenge-Brown: hsl(30, 10%, 34%);
+    --Dark-Charcoal: hsl(24, 5%, 18%);
+}
+
+body {
+    background-color: var(--Eggshell);
+    font-family: 'Outfit', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    color: var(--Dark-Charcoal);
+    font-family: 'Young Serif', sans-serif;
+    font-weight: normal;
+}
+
+h2, ul, .nutritional-values {
+    color: var(--Nutmeg);
+}
+
+h3 {
+    color: var(--Dark-Raspberry);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+}
+
+p {
+    color: var(--Wenge-Brown);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+ul {
+    list-style: disc;
+    padding-left: 25px;
+}
+
+ul li {
+    line-height: 35px;
+    padding-left: 15px;
+}
+
+ol {
+    font-weight: bold;
+    list-style: decimal;
+    padding-left: 25px;
+}
+
+ol li {
+    color: var(--Nutmeg);
+    line-height: 28px;
+    padding-left: 15px;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.sub-content {
+    margin: auto;
+    max-width: 640px;
+    padding: 10px;
+}
+
+.content {
+    background-color: var(--White);
+    border-radius: 20px;
+    margin-bottom: 50px;
+    max-width: 640px;
+    padding: 30px;
+}
+
+.content img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.prep-time {
+    background-color: var(--Rose-White);
+    border-radius: 10px;
+    padding: 5px 0px;
+}
+
+.prep-time h3 {
+    padding: 0px 30px;
+}
+
+.prep-time ul {
+    color: var(--Dark-Raspberry);
+    padding: 0px 50px;
+}
+
+.prep-time li span,
+.ingredients li span,
+.instructions li span,
+.nutrition span {
+    color: var(--Wenge-Brown);
+    font-weight: normal;
+}
+
+.nutrition div {
+    margin-top: 30px;
+}
+
+.nutrition .serving,
+.nutrition .nutritional-values {
+    display: inline-block;
+    padding: 10px 0px;
+    width: 70px;
+}
+
+.nutrition .serving {
+    margin-left: 35px;
+    margin-right: 225px;
+}
+
+.nutrition .nutritional-values {
+    color: var(--Nutmeg);
+}
+
+.prep-time,
+.ingredients,
+.instructions {
+    margin: 30px auto;
+}
+
+.nutrition {
+    margin-top: 30px;
+}
+
+
+@media (max-width: 768px) {
+    .main-content {
+        margin: 10px;
+        padding: 11px;
+    }
+    .sub-content {
+        padding: 11px;
+    }
+    .content {
+        padding: 21px;
+    }
+    .nutrition .serving {
+        margin-left: 5vw;
+        margin-right: 32vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-content {
+        margin: 5px;
+        padding: 4px;
+    }
+    .sub-content {
+        padding: 4px;
+    }
+    .content {
+        padding: 18px;
+    }
+    .nutrition .serving {
+        margin-left: 5vw;
+        margin-right: 32vw;
+    }
+}
